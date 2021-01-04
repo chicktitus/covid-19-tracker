@@ -14,6 +14,7 @@ import { sortData, prettyPrintStat } from "./util";
 import LineGraph from "./LineGraph";
 import "leaflet/dist/leaflet.css";
 import "./InfoBox.css";
+import Footer from "./Footer";
 
 function App() {
   const [countries, setCountries] = useState([]);
@@ -136,6 +137,7 @@ function App() {
           zoom={zoom}
           casesType={casesType}
         />
+        <Footer />
       </div>
       <Card className="app__right">
         <CardContent>
@@ -147,6 +149,8 @@ function App() {
         {/* Table */}
         {/* Graph */}
       </Card>
+
+      
     </div>
   );
 }
